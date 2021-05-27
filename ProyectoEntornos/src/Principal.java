@@ -2,12 +2,8 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import javax.swing.JLabel;
-
 import java.awt.EventQueue;
-import java.awt.Font;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -73,7 +69,7 @@ public class Principal extends JFrame {
 		panel.add(btnReguistro);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("F:\\1DAM\\Porgramacion\\eclipse\\TrabajosEclipse\\ProyectoEntornos\\src\\Carrefour.jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\Carrefour.jpg"));
 		lblNewLabel.setBounds(15, 11, 300, 270);
 		panel.add(lblNewLabel);
 		

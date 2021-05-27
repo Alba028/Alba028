@@ -81,8 +81,8 @@ public class Logeo extends JFrame {
 				if(txtUsuario.getText().equals("Alba") && claveFinal.equals("1234")) {
 					dispose();
 					JOptionPane.showMessageDialog(null, "Bienvenido a carrefour","INGRESASTE", JOptionPane.INFORMATION_MESSAGE);
-					Compra p = new Compra();
-					p.setVisible(true);
+					Cliente c = new Cliente();
+					c.setVisible(true);
 				}else {
 					JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos","ERROR", JOptionPane.INFORMATION_MESSAGE);
 				}

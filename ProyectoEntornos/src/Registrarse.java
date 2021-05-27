@@ -52,7 +52,7 @@ public class Registrarse extends JFrame {
 
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(
-				new ImageIcon("F:\\1DAM\\Porgramacion\\eclipse\\TrabajosEclipse\\ProyectoEntornos\\src\\Icono.png"));
+				new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\Icono.png"));
 		lblNewLabel.setBounds(20, 25, 79, 70);
 		PanelRegistro.add(lblNewLabel);
 
@@ -119,8 +119,8 @@ public class Registrarse extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "Bienvenido a carrefour","INGRESASTE", JOptionPane.INFORMATION_MESSAGE);
-				Compra p = new Compra();
-				p.setVisible(true);
+				Cliente c = new Cliente();
+				c.setVisible(true);
 				PanelRegistro.setVisible(false);
 			}
 		});

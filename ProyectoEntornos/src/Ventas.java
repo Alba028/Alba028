@@ -20,6 +20,8 @@ import javax.swing.JList;
 import java.awt.List;
 import java.awt.Color;
 import javax.swing.border.BevelBorder;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Ventas extends JFrame {
 
@@ -48,7 +50,7 @@ public class Ventas extends JFrame {
 	 */
 	public Ventas() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 895, 628);
+		setBounds(100, 100, 895, 651);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.WHITE);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -69,7 +71,7 @@ public class Ventas extends JFrame {
 		panel1.setForeground(new Color(255, 255, 255));
 		panel1.setFont(null);
 		panel1.setBackground(Color.WHITE);
-		panel1.setBounds(10, 162, 859, 409);
+		panel1.setBounds(10, 151, 859, 409);
 		contentPane.add(panel1);
 		panel1.setLayout(null);
 		
@@ -160,5 +162,16 @@ public class Ventas extends JFrame {
 		lblNewLabel_3_1_3_1.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel_3_1_3_1.setBounds(32, 58, 72, 20);
 		panel1.add(lblNewLabel_3_1_3_1);
+		
+		JButton btnNewButton = new JButton("");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Trabajador t = new Trabajador();
+				t.setVisible(true);
+			}
+		});
+		btnNewButton.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\exit.jpg"));
+		btnNewButton.setBounds(799, 566, 70, 38);
+		contentPane.add(btnNewButton);
 	}
 }

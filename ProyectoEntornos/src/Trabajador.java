@@ -1,10 +1,5 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
@@ -67,6 +62,12 @@ public class Trabajador extends JFrame {
 		Panel1.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Productos p = new Productos();
+				p.setVisible(true);
+			}
+		});
 		btnNewButton_2.setToolTipText("Agregar producto");
 		btnNewButton_2.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\MasComida.jpg"));
 		btnNewButton_2.setBounds(230, 242, 169, 91);

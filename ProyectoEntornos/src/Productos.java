@@ -14,6 +14,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JList;
 import java.awt.List;
+import java.awt.Label;
 
 public class Productos extends JFrame {
 
@@ -57,40 +58,57 @@ public class Productos extends JFrame {
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnNewButton.setBackground(Color.GRAY);
 		btnNewButton.setIcon(null);
-		btnNewButton.setBounds(313, 86, 171, 51);
+		btnNewButton.setBounds(313, 73, 171, 51);
 		contentPane.add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\ojo.jpg"));
-		lblNewLabel.setBounds(219, 86, 106, 51);
+		lblNewLabel.setBounds(216, 73, 106, 51);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnAgregarProductos = new JButton("Agregar productos");
+		btnAgregarProductos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Agregar a = new Agregar();
+				a.setVisible(true);
+			}
+		});
 		btnAgregarProductos.setForeground(Color.BLACK);
 		btnAgregarProductos.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnAgregarProductos.setBackground(Color.GRAY);
-		btnAgregarProductos.setBounds(313, 186, 171, 51);
+		btnAgregarProductos.setBounds(313, 170, 171, 51);
 		contentPane.add(btnAgregarProductos);
 		
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\Mas.png"));
-		lblNewLabel_1.setBounds(229, 170, 74, 77);
+		lblNewLabel_1.setBounds(229, 155, 74, 77);
 		contentPane.add(lblNewLabel_1);
 		
 		JButton btnEliminarProductos = new JButton("Eliminar productos");
 		btnEliminarProductos.setForeground(Color.BLACK);
 		btnEliminarProductos.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnEliminarProductos.setBackground(Color.GRAY);
-		btnEliminarProductos.setBounds(313, 282, 171, 51);
+		btnEliminarProductos.setBounds(313, 264, 171, 51);
 		contentPane.add(btnEliminarProductos);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\Eliminar.jpg"));
-		lblNewLabel_2.setBounds(229, 270, 74, 77);
+		lblNewLabel_2.setBounds(229, 252, 74, 77);
 		contentPane.add(lblNewLabel_2);
 		
 		List list = new List();
 		list.setBounds(10, 60, 200, 319);
 		contentPane.add(list);
+		
+		JButton btnNewButton_1 = new JButton("");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Trabajador t = new Trabajador();
+				t.setVisible(true);
+			}
+		});
+		btnNewButton_1.setIcon(new ImageIcon("C:\\Users\\34673\\git\\Alba028\\ProyectoEntornos\\src\\exit.jpg"));
+		btnNewButton_1.setBounds(448, 362, 74, 30);
+		contentPane.add(btnNewButton_1);
 	}
 }
